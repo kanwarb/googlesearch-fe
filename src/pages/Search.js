@@ -83,8 +83,16 @@ handleInputChange = event => {
 render() {
       return(
         <Container>
-          <h1 className="text-center"> (React) Google Books Search</h1>
-          <h3 className="text-center">Search for and Save Books of Interest</h3>
+        <div className="row">
+          <div className="col s12">
+            <div className="card  mt-3" >
+              <div className="card-content">
+                <h1 className="text-center"> (React) Google Books Search</h1>
+                <h3 className="text-center">Search for and Save Books of Interest</h3>
+              </div>
+            </div>
+          </div>
+        </div>
           <SearchBook
             handleFormSubmit={this.handleFormSubmit}
             handleInputChange={this.handleInputChange}
